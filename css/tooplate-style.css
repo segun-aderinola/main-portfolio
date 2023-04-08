@@ -416,11 +416,12 @@ strong {
   line-height: normal;
 }
 .owl-carousel .owl-nav .owl-prev:before {
-  content: "\e833";
+  
+  content: "\e83f";
   left: -45px;
 }
 .owl-carousel .owl-nav .owl-next:before {
-  content: "\e817";
+  content: "\e840";
   right: -45px;
 }
 
