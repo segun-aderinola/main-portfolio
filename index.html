@@ -84,9 +84,7 @@
                 <span class="animated-item">Segun Aderinola</span>
                 <span class="animated-item">A Fullstack Developer</span>
                 <span class="animated-item">A NodeJS Developer</span>
-                <span class="animated-item">A Backend Developer</span>                
-                <span class="animated-item">A PHP Developer</span>
-
+                                
               </div>
             </h1>
 
@@ -326,7 +324,7 @@
           <div class="contact-form">
             <h2 class="mb-4">Interested in working with me? Let's talk!</h2>
 
-            <form id="form">
+            <form id="myform">
               <div class="row">
                 <div class="col-lg-6 col-12">
                   <input type="text" class="form-control" placeholder="Your Name" name="from_name" id="from_name">
@@ -388,9 +386,17 @@
   <script src="js/index.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-  <!-- <script type="text/javascript">
-    emailjs.init('xsTD2r5yudklfa6PZ')
-  </script> -->
+  <script type="text/javascript">
+    emailjs.init('service_y997r2a')
+  </script>
+  <script src="">
+    emailjs.sendForm('service_y997r2a', 'template_ybp0ll9', '#myForm')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+  </script>
 
 </body>
 
